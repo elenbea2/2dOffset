@@ -1,0 +1,3 @@
+/home/elen/offset_dutra/build/CMakeFiles/offset.dir
+/home/elen/offset_dutra/build/CMakeFiles/edit_cache.dir
+/home/elen/offset_dutra/build/CMakeFiles/rebuild_cache.dir
