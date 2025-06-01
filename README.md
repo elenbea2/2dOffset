@@ -20,19 +20,7 @@ sudo apt update
 sudo apt install cmake g++ libboost-all-dev libcgal-dev
 ```
 
-## Clone o repositório
-git clone git@github.com:elenbea2/2dOffset.git
-cd 2dOffset
-
-## Crie uma pasta de build separada
-mkdir build
-cd build
-
-## Gere os arquivos de build com CMake
-cmake ..
-
-## Compile o projeto
-make
-
-## Rode o executável
+## Dentro da pasta build, rode o executável no terminal
+```bash 
 ./offset
+```
