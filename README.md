@@ -15,8 +15,10 @@ Este trabalho está sendo desenvolvido durante a minha iniciação científica, 
 
 Antes de tudo, certifique-se de que você tem as dependências instaladas:
 
+```bash
 sudo apt update
 sudo apt install cmake g++ libboost-all-dev libcgal-dev
+```
 
 ## Clone o repositório
 git clone git@github.com:elenbea2/2dOffset.git
