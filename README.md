@@ -11,26 +11,26 @@ Este trabalho está sendo desenvolvido durante a minha iniciação científica, 
 - CMake
 - GCC/G++ (Linux)
 
-## 🛠️ Como compilar
+# 🛠️ Como compilar
 
 Antes de tudo, certifique-se de que você tem as dependências instaladas:
 
 sudo apt update
 sudo apt install cmake g++ libboost-all-dev libcgal-dev
 
-# Clone o repositório
+## Clone o repositório
 git clone git@github.com:elenbea2/2dOffset.git
 cd 2dOffset
 
-# Crie uma pasta de build separada
+## Crie uma pasta de build separada
 mkdir build
 cd build
 
-# Gere os arquivos de build com CMake
+## Gere os arquivos de build com CMake
 cmake ..
 
-# Compile o projeto
+## Compile o projeto
 make
 
-# Rode o executável
+## Rode o executável
 ./offset
