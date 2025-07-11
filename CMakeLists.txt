@@ -6,6 +6,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(CGAL REQUIRED)
 
-add_executable(offset offset.cpp)
+add_executable(offset offset_holes.cpp)
 
 target_link_libraries(offset CGAL::CGAL)

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/offset.dir/offset.cpp.o"
-  "CMakeFiles/offset.dir/offset.cpp.o.d"
+  "CMakeFiles/offset.dir/offset_holes.cpp.o"
+  "CMakeFiles/offset.dir/offset_holes.cpp.o.d"
   "offset"
   "offset.pdb"
 )

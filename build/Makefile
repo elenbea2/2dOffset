@@ -129,29 +129,29 @@ offset/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/offset.dir/build.make CMakeFiles/offset.dir/build
 .PHONY : offset/fast
 
-offset.o: offset.cpp.o
-.PHONY : offset.o
+offset_holes.o: offset_holes.cpp.o
+.PHONY : offset_holes.o
 
 # target to build an object file
-offset.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/offset.dir/build.make CMakeFiles/offset.dir/offset.cpp.o
-.PHONY : offset.cpp.o
+offset_holes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offset.dir/build.make CMakeFiles/offset.dir/offset_holes.cpp.o
+.PHONY : offset_holes.cpp.o
 
-offset.i: offset.cpp.i
-.PHONY : offset.i
+offset_holes.i: offset_holes.cpp.i
+.PHONY : offset_holes.i
 
 # target to preprocess a source file
-offset.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/offset.dir/build.make CMakeFiles/offset.dir/offset.cpp.i
-.PHONY : offset.cpp.i
+offset_holes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offset.dir/build.make CMakeFiles/offset.dir/offset_holes.cpp.i
+.PHONY : offset_holes.cpp.i
 
-offset.s: offset.cpp.s
-.PHONY : offset.s
+offset_holes.s: offset_holes.cpp.s
+.PHONY : offset_holes.s
 
 # target to generate assembly for a file
-offset.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/offset.dir/build.make CMakeFiles/offset.dir/offset.cpp.s
-.PHONY : offset.cpp.s
+offset_holes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/offset.dir/build.make CMakeFiles/offset.dir/offset_holes.cpp.s
+.PHONY : offset_holes.cpp.s
 
 # Help Target
 help:
@@ -162,9 +162,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... offset"
-	@echo "... offset.o"
-	@echo "... offset.i"
-	@echo "... offset.s"
+	@echo "... offset_holes.o"
+	@echo "... offset_holes.i"
+	@echo "... offset_holes.s"
 .PHONY : help
 
 

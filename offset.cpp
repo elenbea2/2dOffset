@@ -235,7 +235,7 @@ void export_svg(const Polygon& original,
                 const std::vector<std::vector<Point>>& sub_polygons, 
                 const std::string& filename) {
     std::ofstream out(filename);
-    out << "<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 -60 100 140'>\n";
+    out << "<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='-10 -10 120 120'>\n";
 
 
     out << "<polygon points='";
@@ -271,7 +271,7 @@ int main() {
     poly.push_back(Point(35, -5));
     poly.push_back(Point(15, -10));
     poly.push_back(Point(20, 10));
-    std::vector<double> distances = {-5.5, -2.5, -3.5, -4.5,-4.0, -3.0, -2.0, -5.0,-1.5, -6.0, -6.5, -4.5};
+    std::vector<double> distances = {-4.0, -4.0, -4.0, -4.0,-4.0, -4.0, -4.0, -4.0,-4.0, -4.0, -4.0, -4.0};
 
 
     auto offset_lines = offset_polygon(poly, distances);
@@ -287,6 +287,15 @@ int main() {
     std::cout << "Interseções do offset:\n";
     for (size_t i = 0; i < intersections.size(); ++i) {
         std::cout << "Interseção " << i << ": (" << intersections[i].x() << ", " << intersections[i].y() << ")\n";
+    }
+
+    // Aqui!
+    std::cout << "\nPonto original -> Ponto offsetado:\n";
+    for (size_t i = 0; i < poly.size(); ++i) {
+        if (i < intersections.size()) {
+            std::cout << "  (" << poly[i].x() << ", " << poly[i].y() << ")"
+                      << "  ->  (" << intersections[i].x() << ", " << intersections[i].y() << ")\n";
+        }
     }
 
     auto internal_inters = find_self_intersections(intersections);
